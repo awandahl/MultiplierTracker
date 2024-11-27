@@ -101,7 +101,7 @@ class MainWindow(QMainWindow):
         viewMenu.addAction(multiplierAction)
 
     def showMultiplierTracker(self):
-        self.multiplierTracker = MultiplierTracker('path_to_your_database.db')
+        self.multiplierTracker = MultiplierTracker('cqww_se0i.db')
         self.multiplierTracker.show()
 ```
 
