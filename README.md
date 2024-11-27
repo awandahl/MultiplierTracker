@@ -8,7 +8,6 @@ sqlite3 cqww_se0i.db ".schema" > structure.sql
 ### Database Query
 Create a SQL query to extract the required information:
 
-sql
 ```
 SELECT CountryPrefix, Band, COUNT(*) as QSO_Count 
 FROM DXLOG 
@@ -21,7 +20,6 @@ This query will give us a list of CountryPrefixes, Bands, and the number of QSOs
 ### QT6 Implementation
 To integrate this into the not1mm project, we'll create a new window class:
 
-python
 ```
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QTableWidget, QTableWidgetItem
 from PyQt6.QtCore import Qt
@@ -81,7 +79,6 @@ To integrate this into the main not1mm application:
 
 Example of how to add this to the main window:
 
-python
 ```
 from PyQt6.QtWidgets import QMainWindow, QMenuBar, QMenu, QAction
 from multiplier_tracker import MultiplierTracker
